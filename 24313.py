@@ -5,26 +5,17 @@ for x in q:
     data.append(int(x))
     
 c = int(input())
-
 n0 = int(input())
-
-left_side = data[0] - c
-
-if left_side <= 0:
-    left_side = left_side-(left_side)*2
-else:
-    pass
+a1 = data[0]
+a0 = data[1]
 
 
-right_side = data[1]
 
-x = right_side / left_side
-
-if n0 >= x:
+if a1*n0 + a0 <= c*n0 and a1 <= c:
     print(1)
 else:
     print(0)
-
+        
 
 
     
